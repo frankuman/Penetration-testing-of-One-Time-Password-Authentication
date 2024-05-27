@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block head %}
+  <!-- Design by foolishdeveloper.com -->
+    <title>Secret mail</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="main.css">
+    {% block scripts %}{% endblock %}
+
+{% endblock %}
+{% block body %}
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/008/715/514/original/wallpaper-with-blue-button-sending-email-concept-3d-background-with-copy-space-vector.jpg); background-size: cover;">
+
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <p class="welcome-message">Welcome {{ current_user.username }}</p>
+
+    <div class="email-inbox">
+        <div class="email">
+            <div class="sender">John Doe</div>
+            <div class="subject">Meeting Tomorrow</div>
+            <div class="date">March 11, 2024</div>
+            <div class="message">Hey, just a reminder about the meeting tomorrow at 10 AM. See you there!</div>
+        </div>
+        <div class="email">
+          <div class="sender">Jane Smith</div>
+          <div class="subject">Project Update</div>
+          <div class="date">March 10, 2024</div>
+          <div class="message">Here's the latest update on the project. Please review and provide feedback.</div>
+      </div>
+
+      <div class="email">
+          <div class="sender">Alice Johnson</div>
+          <div class="subject">Important Announcement</div>
+          <div class="date">March 9, 2024</div>
+          <div class="message">Please read this important announcement regarding upcoming changes.</div>
+      </div>
+      <div class="email">
+        <div class="sender">Philippe Van Daele</div>
+        <div class="subject">I reached bronze 1</div>
+        <div class="date">March 8, 2024</div>
+        <div class="message">I have finally reached bronze 1. What an achivement</div>
+    </div>
+    <div class="email">
+      <div class="sender">Oliver Bölin</div>
+      <div class="subject">I boosted Daele to bronze 1</div>
+      <div class="date">March 7, 2024</div>
+      <div class="message">Sorry I couldnt talk yesterday, had to boost Daele to bronze 1</div>
+  </div>
+
+  <button onclick="logout()" class="logout-btn">Logout</button>
+
+{% endblock %}
+

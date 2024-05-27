@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    {% block scripts %}{% endblock %}
+{% endblock %}
+{% block body %}
+
+
+<body style="background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/1920x1200-Futuristic-Wallpaper-HD.jpg); background-size: cover;">
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+
+    <div class="login-box">
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="button" onclick="sendDATA()">Login</button>
+        </form>
+    </div>
+{% endblock %}

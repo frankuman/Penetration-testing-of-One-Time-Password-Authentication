@@ -1,0 +1,279 @@
+/* Center the login form in the middle of the page */
+
+.login-box {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: rgba(rgba(255, 255, 255, 0.611), green, blue, alpha);
+}
+
+/* Style input fields */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style submit button */
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect on submit button */
+.login-box button:hover {
+    background-color: #0056b3;
+}
+.email-inbox {
+    max-width: 600px;
+    margin: 50px 0 50px 50px; /* Adjust margin to move the email inbox to the left */
+}
+
+.email {
+background-color: #fff;
+margin-bottom: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+padding: 20px;
+}
+
+.sender {
+font-weight: bold;
+}
+
+.subject {
+margin-top: 5px;
+color: #007bff; /* blue color */
+}
+
+.date {
+color: #666; /* dark gray color */
+font-size: 0.8em;
+}
+
+.message {
+margin-top: 10px;
+}
+
+.logout-btn {
+background-color: #dc3545; /* Red color */
+color: #fff; /* White color */
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.logout-btn:hover {
+background-color: #c82333; /* Darker red color */
+  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
+body {
+  margin: 0;
+  font-family: 'Sulphur Point', sans-serif;
+  font-weight: 300;
+  background-color: #5F6368;
+  background: url("https://www.pixelstalk.net/wp-content/uploads/images6/1920x1200-Futuristic-Wallpaper-HD.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-box {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child{
+  background: linear-gradient(
+      #1845ad,
+      #23a2f6
+  );
+  left: -130px;
+  top: -80px;
+}
+.shape:last-child{
+  background: linear-gradient(
+      to right,
+      #ff512f,
+      #f09819
+  );
+  right: -130px;
+  bottom: -80px;
+}
+.background1{
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.background1 .shape1{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape1:first-child{
+  background: linear-gradient(
+      #1845ad,
+      #23a2f6
+  );
+  left: -130px;
+  top: -80px;
+}
+.shape1:last-child{
+  background: linear-gradient(
+      to right,
+      #ff512f,
+      #f09819
+  );
+  right: -130px;
+  bottom: -80px;
+}
+.login-box {
+  height: 300px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+
+  
+}
+
+input{
+  display: block;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+
+
+form *{
+  font-family: 'Poppins',sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.welcome-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+  }
+form h3{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+label{
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+select {
+  display: block;
+  height: 40px;
+  width: 105%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+select option {
+  background-color: rgba(255,255,255,0.07);
+  color: #333;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+
+  height: 400px;
+  width: 700px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+
+.user-input-container {
+  color: #ffffff;
+  border-radius: 10px;
+
+}
+
+.user-input-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-input-item {
+  margin-bottom: 10px;
+}
+
+.user-input-item strong {
+  display: inline-block;
+  width: 150px;
+}
+

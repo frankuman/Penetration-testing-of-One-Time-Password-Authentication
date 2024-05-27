@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Two-Step Verification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!-- Additional Stylesheet -->
+    <style>
+        /* Add any additional CSS styles here */
+        .login-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-box h2 {
+            color: #333333;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .login-box p {
+            color: #666666;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .login-box form {
+            text-align: center;
+        }
+
+        .login-box label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666666;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        .login-box input {
+            color: black;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .login-box button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    {% block scripts %}{% endblock %}
+{% endblock %}
+{% block body %}
+
+<body style="background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/1920x1200-Futuristic-Wallpaper-HD.jpg); background-size: cover;">
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+
+    <div class="login-box">
+        <h2>Welcome to Two-Step Verification</h2>
+        <p>To ensure the security of your account, please enter the verification code sent to your registered device.</p>
+        <form id="loginForm">
+            <label for="verification_code">Verification Code:</label>
+            <input type="text" id="verification_code" name="verification_code"><br><br>
+
+            <button type="button" onclick="verifyCode()">Verify Code</button>
+        </form>
+    </div>
+{% endblock %}
